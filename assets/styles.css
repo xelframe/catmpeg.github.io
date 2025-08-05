@@ -10,56 +10,44 @@ body {
 }
 
 main,
-#webring,
-#hello {
+.webring {
     max-width: 1000px;
     width: calc(100% - 20px); 
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-    /* border: 4px double rgb(180, 180, 180); */
 }
 
 a {
     text-decoration: none;
 }
 
-/* <-----------------------> */
-
-#webring {
-    max-width: 1000px;
-    width: calc(100% - 20px); 
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
+.webring {
     justify-content: center;
     align-items: center;
     gap: 15px;
     background-color: rgba(17, 17, 17, 0.7);
     backdrop-filter: blur(10px);
-    /* border: 4px double rgb(180, 180, 180); */
 }
 
 body,
-#webring {
+.webring {
     display: flex;
 }
 
 a,
-#webring {
+.webring {
     color: rgb(66, 131, 252);
 }
 
-#jccenter {
+.jccenter {
     display: flex;
     justify-content: center;
 }
 
-#myfriends {
+.myfriends {
     margin-left: 50px;
 }
-
-/* <-----------------------> */
 
 @media (max-width: 600px) {
     body {
@@ -80,19 +68,17 @@ a,
         margin: 12px 0;
     }
 
-    #jccenter {
+    .jccenter {
         display: block;
     }
 
-    #myfriends {
+    .myfriends {
         margin-left: 0px;
     }
 
-    #webring {
-        width: calc(100% - 20px);
+    .webring {
         margin: 10px auto 0;
         padding: 8px 12px;
-        box-sizing: border-box;
     }
 }
 
