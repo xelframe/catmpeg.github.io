@@ -1,26 +1,20 @@
+@font-face{
+    font-family: 'Doto';
+    src: url('Monocraft.ttf') format('truetype');
+    font-weight: bold;
+    font-display: swap;
+}
+
 body {
     margin: 0;
     min-height: 100svh;
-    font: 14px 'JetBrainsMono',monospace;
+    font: 14px 'Doto',monospace;
     color: #fff;
     text-align: center;
-    background: url("wallhaven-3kkgl6.jpg") center/cover fixed;
-    /* background-color: rgb(27,27,27); */
+    /* background: url("wallhaven-3kkgl6.jpg") center/cover fixed; */
+    background-color: #2c1b02;
     display: flex;
     flex-direction: column;
-}
-
-body:before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background: rgba(37,37,37,0.5);
-    pointer-events: none;
-}
-
-body * {
-    position: relative;
-    z-index: 1;
 }
 
 main {
@@ -32,36 +26,45 @@ main {
 }
 
 a {
-    color: rgb(0, 162, 255);
+    /* color: rgb(0, 162, 255); */
+    color: #fa9c0f;
     text-decoration: none;
+}
+
+.maintitle {
+    font-size: 3em;
+    font-weight: 400;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+/* .flip {
+  display: inline-block;
+  transform: scaleX(-1);
+} */
+
 .info {
     display: flex;
-    gap: 50px;
     justify-content: center;
+}
+
+.info > div {
+    margin: 0 20px;
 }
 
 .h1-404 {
     font-size: 6em;
+    font-weight: 400;
     margin: 0 auto;
 }
 
-@media(max-width:600px){
+@media(max-width:650px){
     body { gap:15px; padding:0 10px; }
     main { padding:15px; }
     h1 { font-size:1.5rem; }
     h2,h3 { font-size:1.1rem; margin:12px 0; }
     .info { display:block; }
-}
-
-@font-face{
-    font-family: 'JetBrainsMono';
-    src: url('JetBrainsMono.ttf') format('truetype');
-    font-weight: bold;
-    font-display: swap;
+    .info > div { margin: 0; }
 }
