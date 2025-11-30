@@ -1,6 +1,6 @@
 @font-face{
-    font-family: 'Monocraft';
-    src: url('Monocraft.ttf') format('truetype');
+    font-family: 'FiraCode';
+    src: url('FiraCode-Bold.ttf') format('truetype');
     font-weight: bold;
     font-display: swap;
 }
@@ -8,10 +8,10 @@
 body {
     margin: 0;
     min-height: 100svh;
-    font: 14px 'Monocraft',monospace;
+    font: 14px 'FiraCode',monospace;
     color: #fff;
     text-align: center;
-    background-color: #2c1b02;
+    background-color: #16001d;
     display: flex;
     flex-direction: column;
 }
@@ -25,11 +25,11 @@ main {
 }
 
 a {
-    color: #fa9c0f;
+    color: #c800ff;
     text-decoration: none;
 }
 
-.maintitle {
+.title {
     font-size: 3em;
     font-weight: 400;
 }
