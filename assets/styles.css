@@ -1,31 +1,32 @@
-@font-face{
-    font-family: 'FiraCode';
-    src: url('FiraCode-Bold.ttf') format('truetype');
+@font-face {
+    font-family: 'ConsolasBold';
+    src: url('ConsolasBold.otf') format('opentype');
     font-weight: bold;
     font-display: swap;
 }
 
 body {
-    margin: 0;
-    min-height: 100svh;
-    font: 14px 'FiraCode',monospace;
+    margin: 20px 0 0 0;
+    font-family: 'ConsolasBold', 'consolas';
+    font: 14px 'ConsolasBold';
     color: #fff;
     text-align: center;
-    background-color: #16001d;
+    background-color: #1d1d1d;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 main {
-    max-width: 1000px;
-    width: calc(100% - 20px);
-    margin: 0 auto;
+    border: thick double;
     padding: 20px;
+    width: 800px;
+    max-width: 100%;
     box-sizing: border-box;
 }
 
 a {
-    color: #c800ff;
+    color: #949494;
     text-decoration: none;
 }
 
@@ -53,11 +54,19 @@ a:hover {
     margin: 0 auto;
 }
 
-@media(max-width:650px){
-    body { gap:15px; padding:0 10px; }
-    main { padding:15px; }
-    h1 { font-size:1.5rem; }
-    h2,h3 { font-size:1.1rem; margin:12px 0; }
-    .info { display:block; }
+.mybutton {
+    height: 50px;
+    width: 40%;
+    resize: none;
+    color: white;
+    background-color: #1d1d1d;
+}
+
+@media (max-width: 800px) {
+    body { gap: 15px; padding: 0 10px; }
+    main { padding: 15px; width: auto; max-width: 100%; }
+    h1 { font-size: 1.5rem; }
+    h2, h3 { font-size: 1.1rem; margin: 12px 0; }
+    .info { display: block; }
     .info > div { margin: 0; }
 }
