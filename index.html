@@ -29,10 +29,9 @@
             <h2>Latest played song:</h2>
             <h3 id="song"></h3>
             <script>let u='catmpeg',s=document.querySelector('#song');fetch('https://lastfm-last-played.biancarosa.com.br/'+u+'/latest-song').then(r=>r.json()).then(j=>s.innerHTML=`<a href="https://www.last.fm/music/${encodeURIComponent(j.track.artist['#text']).replace(/%20/g,'+')}/_/${encodeURIComponent(j.track.name).replace(/%20/g,'+')}" target="_blank">${j.track.name} - ${j.track.artist['#text']}</a>`);</script>
-            </main>
-            <br>
-            <div class="down">
-            <h3><a href="//retro.cat.tolya1337.ru">&gt; retro page &lt;</a></h3>
+    </main>
+    <div class="down">
+    <h3><a href="//retro.cat.tolya1337.ru">&gt; retro page &lt;</a></h3>
     <h3>
         <a href="//otomir23.me/webring/catmpeg/prev">&lt;prev</a>
         <a href="//otomir23.me/webring" target="_blank">webring</a>
