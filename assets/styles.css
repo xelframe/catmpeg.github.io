@@ -67,6 +67,14 @@ a:hover {
     margin: 0 auto;
 }
 
+label {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+
 #mybutton {
     height: 50px;
     width: 40%;
@@ -79,7 +87,7 @@ a:hover {
     body { gap: 15px; padding: 0 10px; }
     main { padding: 15px; }
     h1 { font-size: 1.5rem; }
-    h2, h3 { font-size: 1.1rem; margin: 12px 0; }
+    h2, h3, label { font-size: 1.1rem; margin: 12px 0; }
     .info { display: block; }
     .info > div { margin: 0; }
 }
