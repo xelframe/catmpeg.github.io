@@ -67,7 +67,7 @@ a:hover {
     margin: 0 auto;
 }
 
-.mybutton {
+#mybutton {
     height: 50px;
     width: 40%;
     resize: none;
