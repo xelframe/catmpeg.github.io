@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     const lastPlayedBlock = document.getElementById('last-played');
 
-    fetch("https://lastfm-last-played.biancarosa.com.br/catmpeg/latest-song")
+    fetch("https://cat.fs.tlpteam.ru:5011/?user=catmpeg")
         .then(response => response.json())
         .then(data => {
-            if (data != 0) {
+            if (data && data.name) {
                 const lastPlayed = document.getElementById("song");
-                lastPlayed.innerHTML = `<a target="_blank" href="${data.track.url}">
-                    ${data.track.name} - ${data.track.artist["#text"]}</a>`;
+                lastPlayed.innerHTML = `<a target="_blank" href="${data.url}">
+                    ${data.name} - ${data.artist}</a>`;
                 lastPlayedBlock.style.display = "block";
             }
         })
