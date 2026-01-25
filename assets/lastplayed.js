@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const lastPlayedBlock = document.getElementById('last-played');
 
-    fetch("http://cat.fs.tlpteam.ru:5011/?user=catmpeg")
+    fetch("https://cat.fs.tlpteam.ru:5011/?user=catmpeg")
         .then(response => response.json())
         .then(data => {
             if (data && data.name) {
