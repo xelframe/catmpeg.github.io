@@ -15,15 +15,16 @@ body {
     font-family: 'ConsolasBold', 'consolas';
     font: 14px 'ConsolasBold';
     color: #fff;
-    background-color: #181818;
-    /* background: url('background.png') center/cover fixed no-repeat; */
+    /* background-color: #181818; */
+    background-image: url('/assets/background.jpg');
     text-align: center;
 }
 
 main {
     margin-top: 20px;
     border-radius: 15px;
-    background-color: rgb(1,1,1,0.2);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
     padding: 20px;
     width: 800px;
     max-width: 100%;
@@ -33,9 +34,10 @@ main {
 .down {
     margin-top: 20px;
     border-radius: 15px;
-    background-color: rgb(1,1,1,0.2);
     padding: 10px;
     margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
 }
 
 a {
@@ -59,7 +61,7 @@ a {
 
 .block {
   padding: 10px 15px;
-  background-color: #111111;
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -97,10 +99,11 @@ label {
     width: 40%;
     resize: none;
     color: #ddd;
-    background: rgba(35, 35, 35, 0.85);
-    border: 1px solid #555;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
     border-radius: 5px;
     padding: 5px;
+    overflow: hidden;
 }
 
 @media (max-width: 800px) {
