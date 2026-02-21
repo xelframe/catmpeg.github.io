@@ -16,7 +16,7 @@ body {
     font: 14px 'ConsolasBold';
     color: #fff;
     /* background-color: #181818; */
-    background-image: url('/assets/background.jpg');
+    background: url('/assets/background.jpg') center/cover no-repeat;
     text-align: center;
 }
 
@@ -41,8 +41,8 @@ main {
 }
 
 a {
-    color: #949494;
-    text-decoration: none;
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .title {
@@ -61,14 +61,9 @@ a {
 
 .block {
   padding: 10px 15px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-
-a:hover {
-    text-decoration: underline;
 }
 
 .info {
@@ -99,7 +94,7 @@ label {
     width: 40%;
     resize: none;
     color: #ddd;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 5px;
     padding: 5px;
