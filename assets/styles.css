@@ -70,9 +70,9 @@ a {
 
 .block {
   padding: 10px 15px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 .h1-404 {
@@ -94,7 +94,7 @@ label {
     width: 500px;
     resize: none;
     color: #ddd;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
     border: none;
     border-radius: 5px;
     padding: 5px;
