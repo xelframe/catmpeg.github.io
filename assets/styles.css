@@ -12,7 +12,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-family: 'ConsolasBold', 'consolas';
     font: 14px 'ConsolasBold';
     color: #fff;
     /* background-color: #181818; */
@@ -40,9 +39,6 @@ h2 {
 h3 {
     margin: 5px 0;
 }
-label {
-    margin-bottom: 8px;
-}
 
 .down {
     margin-top: auto;
@@ -52,6 +48,9 @@ label {
 a {
     color: #ffffff;
     text-decoration: underline;
+}
+a:hover {
+    opacity: 0.7;
 }
 
 .title {
@@ -105,7 +104,7 @@ label {
 
 @media (max-width: 800px) {
     h1 { font-size: 1.5rem; }
-    h2, h3, label { font-size: 1.1rem; margin: 12px 0; }
+    h2, h3, label { font-size: 1.1rem; margin: 5px 0; }
     #mybutton { width: 200px; }
     main { padding: 2%;}
 }
